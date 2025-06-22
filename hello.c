@@ -1,6 +1,8 @@
 #include <stdio.h>
 int main()
 {
-    printf("Hello World");
+    int number = 25;
+    char star = '*';
+    float pi = 3.14;
     return 0;
 }
