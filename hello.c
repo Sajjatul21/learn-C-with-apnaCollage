@@ -1,8 +1,13 @@
 #include <stdio.h>
 int main()
 {
-    int age = 22; // integer data type
-    float pi = 3.14;
-    char hastag = '#';
+    printf("Hello world");
+    printf("Hello world");
+    printf("Hello world");
+
+    printf("Hello world\n");
+    printf("Hello world\n");
+    printf("Hello world\n");
+
     return 0;
 }
