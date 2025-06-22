@@ -1,10 +1,9 @@
 #include <stdio.h>
-#include<math.h>
 int main()
 {
-   
-    printf("%d",8%3);
-    printf("%d",-8%3);
-    // printf("%f",8.6%3.0);// modular not work float value
+
+    // int a = 1.999999;
+    int a = (int)1.999999;
+    printf("%d \n", a);
     return 0;
 }
