@@ -2,9 +2,9 @@
 #include<math.h>
 int main()
 {
-    int a = 4;
-    int b = 2;
-    int power = pow(a,b);
-    printf("%d",power);
+   
+    printf("%d",8%3);
+    printf("%d",-8%3);
+    // printf("%f",8.6%3.0);// modular not work float value
     return 0;
 }
