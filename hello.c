@@ -8,6 +8,9 @@ int main()
     scanf("%d", &b);
 
     int sum = a + b;
-    printf("Sum is %d", sum);
+    printf("Sum is %d \n", sum);
+    printf("Sum is %d \n", a - b);
+    printf("Sum is %d \n", a * b);
+
     return 0;
 }
