@@ -1,11 +1,18 @@
 #include <stdio.h>
 int main()
 {
-    // write a program to check if a number is divisible by 2 or not;
+    int age;
+    printf("Enter your age: ");
+    scanf("%d", &age);
 
-    int x;
-    printf("Enter a number: ");
-    scanf("%d", &x);
-    printf("%d", x % 2 == 0);
-    return 0;
+    if (age >= 18)
+    {
+        printf("adult \n");
+        printf("you can vote \n");
+        printf("you can drive");
+    }
+    else
+    {
+        printf("not adult");
+    }
 }
