@@ -1,7 +1,15 @@
 #include <stdio.h>
 int main()
 {
-    printf("%d \n", 5 < 6 && 3 < 4);
-    printf("%d \n", !(5 < 6 || 5 < 2));
+    int a = 4;
+    int b = 2;
+    a += b; // a = a+b
+    printf("%d \n", a);
+    a -= b; // a = a-b
+    printf("%d \n", a);
+    a *= b; // a = a*b
+    printf("%d \n", a);
+    a %= b; // a = a%b
+    printf("%d \n", a);
     return 0;
 }
