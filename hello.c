@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include<math.h>
 int main()
 {
-    float radius;
-    printf("Enter radius ");
-    scanf("%f", &radius);
-    printf("Area is %f", 3.14 * radius * radius);
+    int a = 4;
+    int b = 2;
+    int power = pow(a,b);
+    printf("%d",power);
     return 0;
 }
