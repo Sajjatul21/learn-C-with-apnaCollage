@@ -1,15 +1,7 @@
 #include <stdio.h>
 int main()
 {
-
-    // int a = 1.999999;
-    int a = 5 * 2 - 2 * 3;
-    int b = 5 * 2 / 2 * 3;
-    int c = 5 * (2 / 2) * 3;
-    int d = 5 + 2 / 2 * 3;
-    printf("%d \n", a);
-    printf("%d \n", b);
-    printf("%d \n", c);
-    printf("%d \n", d);
+    printf("%d \n", 5 < 6 && 3 < 4);
+    printf("%d \n", !(5 < 6 || 5 < 2));
     return 0;
 }
