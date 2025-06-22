@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main()
 {
-    printf("Hello world");
-    printf("Hello world");
-    printf("Hello world");
+    int age = 27;
+    printf("age is %d \n", age);
 
-    printf("Hello world\n");
-    printf("Hello world\n");
-    printf("Hello world\n");
+    float pi = 3.14;
+    printf("PI value %f\n", pi);
 
+    char star = '*';
+    printf("star is %c\n", star);
     return 0;
 }
