@@ -1,10 +1,13 @@
 #include <stdio.h>
 int main()
 {
-    int age;
-    printf("Enter your age: ");
-    scanf("%d", &age);
-    printf("Your age is: %d\n", age);
-    printf("memory address %p",&age);
+    int a, b;
+    printf("Enter a: ");
+    scanf("%d", &a);
+    printf("Enter b: ");
+    scanf("%d", &b);
+
+    int sum = a + b;
+    printf("Sum is %d", sum);
     return 0;
 }
