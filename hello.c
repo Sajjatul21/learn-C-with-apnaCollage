@@ -1,16 +1,10 @@
 #include <stdio.h>
 int main()
 {
-    int a, b;
-    printf("Enter a: ");
-    scanf("%d", &a);
-    printf("Enter b: ");
-    scanf("%d", &b);
-
-    int sum = a + b;
-    printf("Sum is %d \n", sum);
-    printf("Sum is %d \n", a - b);
-    printf("Sum is %d \n", a * b);
-
+//    int side ;
+   int side ;
+   printf ("Enter side ");
+   scanf("%d",&side);
+   printf("Area is %d", side * side);
     return 0;
 }
