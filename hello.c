@@ -1,14 +1,18 @@
 #include <stdio.h>
 int main()
 {
-    for (float i = 1.0; i <= 5.0; i++)
+    // print the numbers from 0 to n , if n is given by user
+
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    int i = 0;
+    while (i <= n)
     {
-        printf("%f \n", i);
+        printf("%d \n", i);
+        i++;
     }
 
-    for (char ch = 'a'; ch <= 'z'; ch++)
-    {
-        printf("%c \n", ch);
-    }
     return 0;
 }
