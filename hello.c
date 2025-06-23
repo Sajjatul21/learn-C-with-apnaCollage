@@ -1,9 +1,10 @@
 #include <stdio.h>
 int main()
 {
-    for (int i = 1; i <= 5; i++)
+    // print all number from 1 to 10 except for 6
+    for (int i = 1; i <= 10; i++)
     {
-        if (i == 3)
+        if (i == 6)
         {
             continue;
         }
