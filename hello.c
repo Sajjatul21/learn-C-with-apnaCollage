@@ -1,16 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    // increment operator
-    //  ++i pre increment
-    //  i++ post increment
+    for (float i = 1.0; i <= 5.0; i++)
+    {
+        printf("%f \n", i);
+    }
 
-    int i = 1;
-    /*
-        printf("%d \n", i++); // use, then increment
-        printf("%d \n", i);
-    */
-    printf("%d \n", ++i);
-    printf("%d \n", i);
+    for (char ch = 'a'; ch <= 'z'; ch++)
+    {
+        printf("%c \n", ch);
+    }
     return 0;
 }
