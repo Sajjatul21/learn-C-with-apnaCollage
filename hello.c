@@ -1,31 +1,22 @@
 #include <stdio.h>
 
-// write a function that prints salam if user is bangladesh & good if user is french..
-
-void salam();
-void good();
+int sum(int x, int y);
 
 int main()
 {
-    printf("enter f for french & b for bangladesh: ");
-    char ch;
-    scanf("%c", &ch);
+    int a, b;
+    printf("Enter your first number; ");
+    scanf("%d", &a);
 
-    if (ch == 'b')
-    {
-        salam();
-    }
-    else
-    {
-        good();
-    }
+    printf("Enter your second number");
+    scanf("%d", &b);
+
+    int s = sum(a, b);
+    printf("Sum is %d", s);
+    return 0;
 }
 
-void salam()
+int sum(int x, int y)
 {
-    printf("Salam \n");
-}
-void good()
-{
-    printf("Good \n");
+    return x + y;
 }
