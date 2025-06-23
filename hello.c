@@ -1,14 +1,17 @@
 #include <stdio.h>
 int main()
 {
-    // print all the odd numbers from 5 to 50
-    for (int i = 5; i <= 50; i++)
+    // print the factorial of a number n;
+    int n;
+    printf("enter number: ");
+    scanf("%d", &n);
+
+    int fact = 1;
+    for (int i = 1; i <= n; i++)
     {
-        if (i % 2 != 0)
-        {
-            printf("%d \n", i);
-        }
+        fact = fact * i;
     }
+    printf("final factorial %d", fact);
 
     return 0;
 }
