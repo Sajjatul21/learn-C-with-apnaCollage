@@ -5,27 +5,13 @@ int main()
     int n;
     printf("Enter a number: ");
     scanf("%d", &n);
-    /*
-        int sum = 0;
-        for (int i = 1; i <= n; i++)
-        {
-            sum = sum + i;
-        }
-        printf("Sum is %d\n", sum);
-
-        for (int j = n; j >= 1; j--)
-        {
-            printf("%d \n", j);
-        }
-     */
-
     int sum = 0;
-    for (int i = 1, j = n; i <= n && j >= 1; i++, j--)
+    for (int j = n; j >= 1; j--)
     {
-        sum = sum + i;
+        sum = sum + j;
         printf("%d\n", j);
     }
-    printf("Sum is %d\n", sum);
+    printf("Sum is %d", sum);
 
     return 0;
 }
