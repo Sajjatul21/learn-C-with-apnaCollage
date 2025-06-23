@@ -1,14 +1,13 @@
 #include <stdio.h>
 int main()
 {
-    // print all number from 1 to 10 except for 6
-    for (int i = 1; i <= 10; i++)
+    // print all the odd numbers from 5 to 50
+    for (int i = 5; i <= 50; i++)
     {
-        if (i == 6)
+        if (i % 2 != 0)
         {
-            continue;
+            printf("%d \n", i);
         }
-        printf("%d \n", i);
     }
 
     return 0;
