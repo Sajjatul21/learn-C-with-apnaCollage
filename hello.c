@@ -1,14 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    // Print the table of a number input by the user;
-    int n;
-    printf("Enter number: ");
-    scanf("%d", &n);
-    for (int i = 1; i <= 10; i++)
+    for (int i = 1; i <= 5; i++)
     {
-        printf("%d \n", n * i);
+        if (i == 3)
+        {
+            break;
+        }
+        printf("%d \n", i);
     }
-
+    printf("end");
     return 0;
 }
