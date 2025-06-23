@@ -1,16 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    // print reverses of the table for a number n;
+    // calculate the sum of of numbers between 5 to 50. (including 5 & 50);
 
-    int n;
-    printf("enter number: ");
-    scanf("%d", &n);
-
-    for (int i = 10; i >= 1; i--)
+    int sum = 0;
+    for (int i = 5; i <= 50; i++)
     {
-        printf("%d \n", n * i);
+        sum = sum + i;
     }
+    printf("Sum is  %d", sum);
 
     return 0;
 }
