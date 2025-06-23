@@ -1,17 +1,16 @@
 #include <stdio.h>
 int main()
 {
-    // print the factorial of a number n;
+    // print reverses of the table for a number n;
+
     int n;
     printf("enter number: ");
     scanf("%d", &n);
 
-    int fact = 1;
-    for (int i = 1; i <= n; i++)
+    for (int i = 10; i >= 1; i--)
     {
-        fact = fact * i;
+        printf("%d \n", n * i);
     }
-    printf("final factorial %d", fact);
 
     return 0;
 }
