@@ -1,15 +1,31 @@
 #include <stdio.h>
 
-// function declaration/ function prototype
-void printHello(); // void means no return in this function
-int main()         // int means its return integer value;
+// write a function that prints salam if user is bangladesh & good if user is french..
+
+void salam();
+void good();
+
+int main()
 {
-    printHello();
-    printHello();
-    return 0;
+    printf("enter f for french & b for bangladesh: ");
+    char ch;
+    scanf("%c", &ch);
+
+    if (ch == 'b')
+    {
+        salam();
+    }
+    else
+    {
+        good();
+    }
 }
 
-void printHello() // function definition
+void salam()
 {
-    printf("Hello! \n");
+    printf("Salam \n");
+}
+void good()
+{
+    printf("Good \n");
 }
