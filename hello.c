@@ -1,17 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    // Print the sum of first n natural number. also print them in reverse;
+    // Print the table of a number input by the user;
     int n;
-    printf("Enter a number: ");
+    printf("Enter number: ");
     scanf("%d", &n);
-    int sum = 0;
-    for (int j = n; j >= 1; j--)
+    for (int i = 1; i <= 10; i++)
     {
-        sum = sum + j;
-        printf("%d\n", j);
+        printf("%d \n", n * i);
     }
-    printf("Sum is %d", sum);
 
     return 0;
 }
