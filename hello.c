@@ -1,20 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    // keep taking numbers as input from user until user enters a number which is multiply of 7;
-    int n;
-    do
+    for (int i = 1; i <= 5; i++)
     {
-        printf("Enter number: ");
-        scanf("%d", &n);
-        printf("%d\n", n);
-
-        if (n % 7 == 0)
+        if (i == 3)
         {
-            break;
+            continue;
         }
-    } while (1);
-    printf("thank you.");
+        printf("%d \n", i);
+    }
 
     return 0;
 }
