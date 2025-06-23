@@ -1,14 +1,18 @@
 #include <stdio.h>
 int main()
 {
-    for (int i = 1; i <= 5; i++)
+    // keep taking numbers as input from user until user enters an odd numbers;
+    int n;
+    do
     {
-        if (i == 3)
+        printf("Enter number: ");
+        scanf("%d", &n);
+        printf("%d\n", n);
+
+        if (n % 2 != 0)
         {
             break;
         }
-        printf("%d \n", i);
-    }
-    printf("end");
+    } while (1);
     return 0;
 }
