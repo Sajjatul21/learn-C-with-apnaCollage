@@ -1,14 +1,15 @@
 #include <stdio.h>
-int main()
+
+// function declaration/ function prototype
+void printHello(); // void means no return in this function
+int main()         // int means its return integer value;
 {
-    // calculate the sum of of numbers between 5 to 50. (including 5 & 50);
-
-    int sum = 0;
-    for (int i = 5; i <= 50; i++)
-    {
-        sum = sum + i;
-    }
-    printf("Sum is  %d", sum);
-
+    printHello();
+    printHello();
     return 0;
+}
+
+void printHello() // function definition
+{
+    printf("Hello! \n");
 }
