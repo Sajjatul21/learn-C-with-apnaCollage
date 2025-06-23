@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    // keep taking numbers as input from user until user enters an odd numbers;
+    // keep taking numbers as input from user until user enters a number which is multiply of 7;
     int n;
     do
     {
@@ -9,10 +9,12 @@ int main()
         scanf("%d", &n);
         printf("%d\n", n);
 
-        if (n % 2 != 0)
+        if (n % 7 == 0)
         {
             break;
         }
     } while (1);
+    printf("thank you.");
+
     return 0;
 }
