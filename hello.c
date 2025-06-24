@@ -1,23 +1,22 @@
 #include <stdio.h>
 
-int sumNm1 = sum(n - 1);  
-int sumN = sumNm1 + n;  
-int sum(int n);
+// factorial of n
+int fact(int n);
 
 int main()
 {
-    printf("sum is %d", sum(5));
+    printf("factorial is %d", fact(5));
     return 0;
 }
 
 // recursive function
-int sum(int n)
+int fact(int n)
 {
-    if (n == 1)
+    if (n == 0)
     {
         return 1;
-    }  
-    int sumNm1 = sum(n - 1); 
-    int sumN = sumNm1 + n;
-    return sumN;
+    }
+    int factNm1 = fact(n - 1);
+    int factN = factNm1 * n;
+    return factN;
 }
