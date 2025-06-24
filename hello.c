@@ -1,19 +1,16 @@
 #include <stdio.h>
 
-void printTable(int n);
+void calculatePrice(float value);
 int main()
 {
-    int n;
-    printf("Enter  number: ");
-    scanf("%d", &n);
-    printTable(n);
+    float value = 100.0;
+    calculatePrice(value);
+    printf("Value is %f \n", value);
     return 0;
 }
 
-void printTable(int n)
+void calculatePrice(float value)
 {
-    for (int i = 1; i <=10; i++)
-    {
-        printf("%d\n", n * i);
-    }
+    value = value + (18.0 * value);
+    printf("final price is  %f \n", value);
 }
