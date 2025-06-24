@@ -1,17 +1,31 @@
 #include <stdio.h>
 
-// write a function to convert celsius to fahrenheit
-float convertTemp(float celsius);
+// write a function to print n terms of the fibonacci sequence.
+
+int fibo(int n);
 
 int main()
 {
-    float far = convertTemp(37);
-    printf("far: %f", far);
+    printf("%d", fibo(6));
     return 0;
 }
 
-float convertTemp(float celsius)
+int fibo(int n)
 {
-    float far = celsius * (9.0 / 5.0) + 32;
-    return far;
+    if (n == 0 || n == 1)
+    {
+        if (n == 0)
+        {
+            return 0;
+        }
+        if (n == 1)
+        {
+            return 1;
+        }
+    }
+    int fiboNm1 = fibo(n - 1);
+    int fiboNm2 = fibo(n - 2);
+    int fibN = fiboNm1 + fiboNm2;
+    // printf("fibo of %d is : %d \n", n, fibN);
+    return fibN;
 }
