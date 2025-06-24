@@ -1,22 +1,19 @@
 #include <stdio.h>
 
-int sum(int x, int y);
-
+void printTable(int n);
 int main()
 {
-    int a, b;
-    printf("Enter your first number; ");
-    scanf("%d", &a);
-
-    printf("Enter your second number");
-    scanf("%d", &b);
-
-    int s = sum(a, b);
-    printf("Sum is %d", s);
+    int n;
+    printf("Enter  number: ");
+    scanf("%d", &n);
+    printTable(n);
     return 0;
 }
 
-int sum(int x, int y)
+void printTable(int n)
 {
-    return x + y;
+    for (int i = 1; i <=10; i++)
+    {
+        printf("%d\n", n * i);
+    }
 }
