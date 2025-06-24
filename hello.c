@@ -1,20 +1,23 @@
 #include <stdio.h>
 
-void printHw(int count);
+int sumNm1 = sum(n - 1);  
+int sumN = sumNm1 + n;  
+int sum(int n);
 
 int main()
 {
-    printHw(5);
+    printf("sum is %d", sum(5));
     return 0;
 }
 
 // recursive function
-void printHw(int count)
+int sum(int n)
 {
-    if (count == 0)
+    if (n == 1)
     {
-        return;
-    }
-    printf("Hello World \n");
-    printHw(count - 1);
+        return 1;
+    }  
+    int sumNm1 = sum(n - 1); 
+    int sumN = sumNm1 + n;
+    return sumN;
 }
