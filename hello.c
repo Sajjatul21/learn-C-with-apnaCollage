@@ -1,16 +1,11 @@
 #include <stdio.h>
+#include <math.h>
 
-void calculatePrice(float value);
+// use libary functions to calculate the square of a number given  by user;
+
 int main()
 {
-    float value = 100.0;
-    calculatePrice(value);
-    printf("Value is %f \n", value);
+    int n = 4;
+    printf("%f", pow(n, 2));
     return 0;
-}
-
-void calculatePrice(float value)
-{
-    value = value + (18.0 * value);
-    printf("final price is  %f \n", value);
 }
