@@ -2,8 +2,14 @@
 
 int main()
 {
-    char str[100];
-    fgets(str, 100, stdin);
-    puts(str);
+    char *canChange = "Hello world";
+    puts(canChange);
+    canChange = "Shihab";
+    puts(canChange);
+
+    char canNotChange[] = "Hello world";
+    puts(canChange);
+    // canNotChange = "Sajjatul Islam";
+
     return 0;
 }
