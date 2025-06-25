@@ -1,13 +1,13 @@
 #include <stdio.h>
-// write a program to enter price of 3 item print there final cost with their gst;
+// Pointer Arithmetic
+// Pointer can be increment & decrement
 int main()
 {
-
-    // float price[3] = {100.0, 200.0, 300.0};
-    float price[] = {100.0, 200.0, 300.0};
-
-    printf("Total price1: %f \n", price[0] + (price[0] * 0.18));
-    printf("Total price2: %f \n", price[0] + (price[1] * 0.18));
-    printf("Total price3: %f \n", price[0] + (price[2] * 0.18));
+    int age = 22;
+    int *ptr = &age;
+    printf("ptr = %u \n", ptr);
+    ptr++;
+    // ptr--;
+    printf("ptr = %u \n", ptr);
     return 0;
 }
