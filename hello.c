@@ -2,9 +2,8 @@
 
 int main()
 {
-    char name[50];
-    printf("enter your name: ");
-    scanf("%s", name);
-    printf("your name is %s", name);
+    char str[100];
+    fgets(str, 100, stdin);
+    puts(str);
     return 0;
 }
