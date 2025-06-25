@@ -1,21 +1,22 @@
 #include <stdio.h>
-// write a program to store the first fibonacci  numbers.
+// create a string firstName  & lastName to store details of user & print all the characters using a loop;
 
+void printString(char arr[]);
 int main()
 {
-    int n;
-    printf("Enter a n (n>2): ");
-    scanf("%d", &n);
+    char firstName[] = "Sajjatul";
+    char lastName[] = "Islam";
+    
+    printString(firstName);
+    printString(lastName);
+    return 0;
+}
 
-    int fibo[n];
-    fibo[0] = 0;
-    fibo[1] = 1;
-
-    for (int i = 2; i < n; i++)
+void printString(char arr[])
+{
+    for (int i = 0; arr[i] != '\0'; i++)
     {
-        fibo[i] = fibo[i - 1] + fibo[i - 2];
-        printf("%d \t", fibo[i]);
+        printf("%c", arr[i]);
     }
     printf("\n");
-    return 0;
 }
