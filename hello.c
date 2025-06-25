@@ -1,16 +1,22 @@
 #include <stdio.h>
-// will the address output are same?
-void printAddress(int n);
+// write a function to calculate the sum, product & average of 2 number. Print the average in the main function.
+void doWork(int a, int b, int *sum, int *prod, int *ave);
 
 int main()
 {
-    int n = 4;
-    printAddress(n);
-    printf("Address of n is: %d \n", &n);
+    int a = 4, b = 2;
+    int sum, prod, ave;
+    doWork(a, b, &sum, &prod, &ave);
+    printf("sum = %d \nprod = %d\nave = %d", sum, prod, ave);
     return 0;
 }
 
-void printAddress(int n)
+void doWork(int a, int b, int *sum, int *prod, int *ave)
 {
-    printf("Address of n is: %d \n", &n);
+    /* int sum = a + b;
+    int prod = a * b;
+    int ave = (a + b) / 2; */
+    *sum = a + b;
+    *prod = a * b;
+    *ave = (a + b) / 2;
 }
