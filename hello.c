@@ -1,19 +1,22 @@
 #include <stdio.h>
-// array as function arguments
-
+// 2D array
 void printNumbers(int *arr, int n);
 
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 5, 6};
-    printNumbers(arr, 6);
-    return 0;
-}
+    int marks[2][3]; // 2 students 3 subjects;
 
-void printNumbers(int *arr, int n)
-{
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d \t", arr[i]);
-    }
+    // first student
+    marks[0][0] = 90;
+    marks[0][1] = 97;
+    marks[0][2] = 98;
+
+    // second student
+    marks[1][0] = 80;
+    marks[1][1] = 89;
+    marks[1][2] = 99;
+
+    printf("%d \n", marks[0][0]);
+    printf("%d \n", marks[1][0]);
+    return 0;
 }
