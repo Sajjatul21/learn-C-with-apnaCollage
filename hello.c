@@ -9,13 +9,13 @@ int main()
     for (int i = 0; i < 5; i++)
     {
         printf("%d index: ", i);
-        scanf("%d", (pointer + i));
+        scanf("%d", &aadhar[i]);
     }
 
     // output
     for (int i = 0; i < 5; i++)
     {
-        printf("%d index = %d \n", i, *(pointer + i));
+        printf("%d index = %d \n", i, aadhar[i]);
     }
 
     return 0;
