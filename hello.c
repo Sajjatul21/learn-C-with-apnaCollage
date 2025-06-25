@@ -1,16 +1,22 @@
 #include <stdio.h>
-// Pointer Arithmetic
-// Pointer can be increment & decrement
+// array is a pointer
 int main()
 {
-    int age = 22;
-    int _age = 23;
-    int *ptr = &age;
-    int *_ptr = &_age;
+    int aadhar[5];
 
-    printf("%u, %u difference = %u \n", ptr, _ptr, ptr - _ptr);
-    _ptr = &age;
-    printf("comparison = %u \n", ptr == _ptr);
+    //    input
+    int *pointer = &aadhar[0];
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d index: ", i);
+        scanf("%d", (pointer + i));
+    }
+
+    // output
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d index = %d \n", i, *(pointer + i));
+    }
 
     return 0;
 }
