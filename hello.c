@@ -1,16 +1,15 @@
 #include <stdio.h>
-
+// write a program to enter price of 3 item print there final cost with their gst;
 int main()
 {
-    int marks[3];
-
-    printf("Enter phy: ");
-    scanf("%d", &marks[0]);
-    printf("Enter chem: ");
-    scanf("%d", &marks[1]);
-    printf("Enter math: ");
-    scanf("%d", &marks[2]);
-
-    printf("Phy = %d, chem = %d, math = %d", marks[0], marks[1], marks[3]);
+    float price[3];
+    printf("enter 3 prices: ");
+    scanf("%f",&price[0]);
+    scanf("%f",&price[1]);
+    scanf("%f",&price[2]);
+    
+    printf("Total price1: %f \n", price[0]+ (price[0]*0.18));
+    printf("Total price2: %f \n", price[0]+ (price[1]*0.18));
+    printf("Total price3: %f \n", price[0]+ (price[2]*0.18));
     return 0;
 }
