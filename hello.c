@@ -1,33 +1,22 @@
 #include <stdio.h>
-
-// pointer in function call
-// call by value
-// call by reference
-
-void square(int n);
-
-void _square(int *n);
+// Swap 2 numbers, a&b
+void swap(int a, int b);
 
 int main()
 {
-    int number = 4;
-    square(number); // pass by value
-    printf("number: %d \n", number);
-
-    // pas by reference
-    _square(&number);
-    printf("number: %d \n", number);
+    int x = 3;
+    int y = 5;
+    swap(x, y);
+printf("x = %d & x = %d \n", x, y);
+    return 0;
 }
+
 // call by value
-void square(int n)
-{
-    n = n * n;
-    printf("Square: %d \n", n);
-}
 
-// call by reference
-void _square(int *n)
+void swap(int a, int b)
 {
-    *n = (*n) * (*n);
-    printf("Square: %d \n", *n);
+    int temp = a;
+    a = b;
+    b = temp;
+    printf("a = %d & b = %d \n", a, b);
 }
