@@ -3,11 +3,12 @@
 // Pointer can be increment & decrement
 int main()
 {
-    int age = 22;
-    int *ptr = &age;
+    float price = 100.00;
+    float *ptr = &price;
     printf("ptr = %u \n", ptr);
-    ptr++;
-    // ptr--;
+    ptr++;  // float size 4 byte. increment 4 byte in memory address
+    printf("ptr = %u \n", ptr);
+    ptr--; // float size 4 byte. increment 4 byte in memory address
     printf("ptr = %u \n", ptr);
     return 0;
 }
