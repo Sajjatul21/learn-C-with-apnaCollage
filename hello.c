@@ -1,7 +1,7 @@
 #include <stdio.h>
 // array as function arguments
 
-void printNumbers(int arr[], int n);
+void printNumbers(int *arr, int n);
 
 int main()
 {
@@ -10,7 +10,7 @@ int main()
     return 0;
 }
 
-void printNumbers(int arr[], int n)
+void printNumbers(int *arr, int n)
 {
     for (int i = 0; i < n; i++)
     {
