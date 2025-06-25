@@ -1,31 +1,21 @@
 #include <stdio.h>
-// write a function to reverse an array
-void reverse(int arr[], int n);
-void printArr(int arr[], int n);
+// write a program to store the first fibonacci  numbers.
+
 int main()
 {
-    int arr[] = {1, 2, 3, 4, 5, 6};
-    reverse(arr, 6);
-    printArr(arr, 6);
-    return 0;
-}
+    int n;
+    printf("Enter a n (n>2): ");
+    scanf("%d", &n);
 
-void reverse(int arr[], int n)
-{
-    for (int i = 0; i < n / 2; i++)
-    {
-        int first = arr[i];
-        int second = arr[n - i - 1];
-        arr[i] = second;
-        arr[n - i - 1] = first;
-    }
-}
+    int fibo[n];
+    fibo[0] = 0;
+    fibo[1] = 1;
 
-void printArr(int arr[], int n)
-{
-    for (int i = 0; i < n; i++)
+    for (int i = 2; i < n; i++)
     {
-        printf("%d \t", arr[i]);
+        fibo[i] = fibo[i - 1] + fibo[i - 2];
+        printf("%d \t", fibo[i]);
     }
     printf("\n");
+    return 0;
 }
