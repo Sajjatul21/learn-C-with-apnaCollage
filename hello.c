@@ -1,17 +1,20 @@
 #include <stdio.h>
 
+// pointer in function call
+// call by value
+// call by reference
+
+void square(int n);
+
 int main()
 {
-
-    // print the value of i from its pointer to pointer;
-    int i = 5;
-    int *pointer = &i;
-    printf("%p \n", pointer);  // (&) address : 0061FF18
-    printf("%d \n", *pointer); // (*) value of address: 5
-
-    // pointer to pointer
-    int **pointerToPointer = &pointer;
-    printf("%p \n", pointerToPointer);   // (&) address
-    printf("%p \n", *pointerToPointer);  // (*) value of address
-    printf("%d \n", **pointerToPointer); // (**) value of address pointer to pointer
+    int number = 4;
+    square(number);  // pass by value
+    printf("number: %d \n", number);
+}
+// call by value
+void square(int n)
+{
+    n = n * n;
+    printf("Square: %d \n", n);
 }
