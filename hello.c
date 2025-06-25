@@ -1,15 +1,21 @@
 #include <stdio.h>
+// make a program that input user's name & print its length;
 
+int countLength(char arr[]);
 int main()
 {
-    char *canChange = "Hello world";
-    puts(canChange);
-    canChange = "Shihab";
-    puts(canChange);
-
-    char canNotChange[] = "Hello world";
-    puts(canChange);
-    // canNotChange = "Sajjatul Islam";
-
+    char name[100];
+    fgets(name, 100, stdin);
+    printf("length is %d", countLength(name));
     return 0;
+}
+
+int countLength(char arr[])
+{
+    int count = 0;
+    for (int i = 0; arr[i] != '\0'; i++)
+    {
+        count++;
+    }
+    return count - 1;
 }
