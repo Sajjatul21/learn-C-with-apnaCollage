@@ -1,21 +1,22 @@
 #include <stdio.h>
-// make a program that input user's name & print its length;
+#include <string.h>
 
-int countLength(char arr[]);
-int main()
+struct student
 {
     char name[100];
-    fgets(name, 100, stdin);
-    printf("length is %d", countLength(name));
-    return 0;
-}
+    int roll;
+    float cgpa;
+};
 
-int countLength(char arr[])
+int main()
 {
-    int count = 0;
-    for (int i = 0; arr[i] != '\0'; i++)
-    {
-        count++;
-    }
-    return count - 1;
+    struct student s1;
+    strcpy(s1.name, "Sajjatul");
+    s1.roll = 01;
+    s1.cgpa = 4.00;
+
+    printf("student name = %s \n", s1.name);
+    printf("student roll = %d \n", s1.roll);
+    printf("student cgpa = %f \n", s1.cgpa);
+    return 0;
 }
